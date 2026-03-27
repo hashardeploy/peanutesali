@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday M.Ali | Ali Jan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6c5ce7;
+            --secondary: #fd79a8;
+            --accent: #00cec9;
+            --bg: #f9f9ff;
+            --text: #2d3436;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            overflow-x: hidden;
+        }
+
+        /* --- Navigation --- */
+        nav {
+            background: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-logo {
+            font-family: 'Fredoka One', cursive;
+            font-size: 1.8rem;
+            color: var(--primary);
+            letter-spacing: 1px;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #a29bfe 0%, #fab1a0 100%);
+            color: white;
+        }
+
+        .hero-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 8px solid rgba(255,255,255,0.3);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        h1 {
+            font-family: 'Fredoka One', cursive;
+            font-size: 4rem;
+            margin: 0;
+            text-shadow: 3px 3px 0px var(--secondary);
+            letter-spacing: 2px;
+        }
+
+        /* --- Sections --- */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        h2 {
+            font-family: 'Fredoka One', cursive;
+            text-align: center;
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        /* --- Wishes Grid --- */
+        .wishes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .wish-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border-bottom: 5px solid var(--accent);
+            transition: transform 0.3s ease;
+        }
+
+        .wish-card:hover { transform: translateY(-10px); }
+
+        /* --- Memories Section --- */
+        .memories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .memory-item {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        .read-btn {
+    margin-top: 30px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    border: none;
+    padding: 15px 45px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.4rem;
+    margin-left: 30%;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.read-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(253, 121, 168, 0.3);
+}
+
+
+        .memory-img-placeholder {
+            width: 100%;
+            height: 200px;
+            background: #dfe6e9;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #b2bec3;
+        }
+
+        .memory-text-area {
+            width: 100%;
+            border: 2px dashed #b2bec3;
+            padding: 10px;
+            min-height: 60px;
+            border-radius: 5px;
+            color: #636e72;
+            font-style: italic;
+        }
+
+        /* --- Balloon Animation --- */
+        .balloon {
+            position: fixed;
+            bottom: -100px;
+            z-index: 99;
+            border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+            animation: rise 8s linear infinite;
+        }
+
+        /* Keyframes */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes rise {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(-120vh) rotate(20deg); opacity: 0; }
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-logo">Ali Jan</div>
+    </nav>
+
+    <header class="hero">
+        <img src="jpgultra.jpeg" alt="M. Ali" class="hero-img">
+        <h1>Happy Birthday M.Ali</h1>
+        <p style="font-size: 1.2rem; opacity: 0.9;">Cheers to another year of greatness!</p>
+    </header>
+<a href="ali.html">
+    <button class="read-btn" onclick="alert('I am accepting that I am  g**.')">
+                Read This 
+                <span>✉️</span>
+            </button>
+</a>
+        </div>
+    <section class="container">
+        <h2>Happy Birthday from All World not only from North Korea 😉</h2>
+        <div class="wishes-grid">
+            <div class="wish-card"><strong>Kim Jong Un ( North Korea )</strong> <p>Ali You are now 15yr old, My Daughter kim Ju Ae is waiting for you to 22yr old for marriage 👀🚀</p></div>
+            <div class="wish-card"><strong>India:</strong> <p>Mossi ya Rolando ?</p></div>
+            <div class="wish-card"><strong>Putin (Russia) :</strong> <p>Hathon pe rkh kr hath wo boli ! Yso, pnjo, har, kbootar, doli😫😌</p></div>
+        </div>
+    </section>
+
+
+    <hr style="border: 0; height: 1px; background: #eee; margin: 0 10%;">
+
+
+    <div id="balloon-container"></div>
+
+    <script>
+        function createBalloon() {
+            const container = document.getElementById('balloon-container');
+            const balloon = document.createElement('div');
+            const colors = ['#6c5ce7', '#fd79a8', '#00cec9', '#ffeaa7', '#fab1a0'];
+            
+            const size = Math.floor(Math.random() * 40) + 30 + "px";
+            balloon.className = 'balloon';
+            balloon.style.left = Math.random() * 100 + "vw";
+            balloon.style.width = size;
+            balloon.style.height = (parseInt(size) * 1.2) + "px";
+            balloon.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            balloon.style.animationDuration = (Math.random() * 4 + 4) + "s";
+            
+            container.appendChild(balloon);
+
+            // Remove balloon after it floats away
+            setTimeout(() => {
+                balloon.remove();
+            }, 8000);
+        }
+
+        // Generate balloons every 500ms
+        setInterval(createBalloon, 600);
+    </script>
+</body>
+</html>
